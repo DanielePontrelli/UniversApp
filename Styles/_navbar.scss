@@ -1,0 +1,36 @@
+@import './utils';
+@import './media-queries';
+
+.navbar {
+    background: $primary-color;
+    display: flex;
+    justify-content: space-evenly;
+    height: 7.7rem;
+    position: relative;
+    z-index: 5;
+
+    &-logo {
+        @include flexCenter;
+    }
+
+    &-menu {
+        @include flexCenter;
+        
+
+        .menu-link {
+            display: flex;
+            font-size: 18px;
+            margin: 0 1rem;
+            @include button-format; 
+            border: 2px solid rgb(255, 0, 157);
+        }
+
+        #candidati {
+            background-image: $gradient-fuchsia;
+
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+}

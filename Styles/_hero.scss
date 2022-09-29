@@ -1,0 +1,109 @@
+@import './utils';
+@import './media-queries';
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    background-color: $primary-color;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-left {
+        color: white;
+        @include flexCenter;
+        flex-direction: column;
+        padding-bottom: 10rem;
+        line-height: 1.3;
+
+        @include tablet {
+            padding: 0;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 4rem;
+            width: 30rem;
+            padding: 2rem;
+            #sfumatura {
+                background: linear-gradient(rgb(124, 205, 255) 0%,rgb(0, 59, 220) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        } 
+
+        ul {
+            list-style: none;
+            font-size: 20px;
+            li {
+                padding: 7px;
+            }
+        }
+    }
+
+        &-menu {
+            @include flexCenter;
+            flex-direction: column;
+            margin: 5rem;
+            margin-left: 0;
+            margin-top: 2rem;
+             background: url(https://i.imgur.com/iqsrr43.png) no-repeat left;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+
+            .stile-candidati {
+                
+                @include flexCenter;
+                padding: 0.5rem 2rem;
+                margin: 3.5rem 0 1rem 0.7rem;
+                @include transparent-box;
+                img {
+                    padding-right: 0;
+                }
+            }
+    
+            .menu-link {
+                display: flex;
+                font-size: 15px;
+                margin: 0 1rem;
+                @include button-format;
+                z-index: 3;
+                position: relative;
+            }
+    
+            #candidati {
+                margin-left: 0;
+                background: $gradient-fuchsia;
+                transition-property: background;
+                transition-duration: 3s;
+                
+                &:hover {
+                    background: linear-gradient(to right,rgb(255, 34, 255) 0%, rgb(245, 8, 99) 100%);   
+                }
+
+            }
+
+            #prenota {
+                margin-left: 2rem;
+                background: $gradient-blue;
+                transition-duration:3s;
+                transition-property: background;
+
+                &:hover {
+                    background: linear-gradient(to right,rgb(0, 229, 255)  0%, blue 90%);
+                }
+            }
+        }
+
+
+
+        &-right {
+            margin: 0 0 23rem 3rem;
+        }
+}

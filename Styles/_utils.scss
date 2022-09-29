@@ -1,0 +1,33 @@
+$primary-color: black;
+$gradient-fuchsia: linear-gradient(to right, rgb(245, 8, 99) 0%, rgb(255, 34, 255) 100%);
+$gradient-blue: linear-gradient(to right, blue 0%, rgb(0, 229, 255) 90%);
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin button-format {
+    text-decoration: none;
+    padding: 0.3rem 2rem;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem;
+    }   
+}
+
+
+@mixin transparent-box {
+    border-radius: 20px;
+    background: rgba(51, 255, 217, 0.2);
+    box-shadow: inset 5px 6px 26px 5px rgba(255, 255, 255, 0.4);
+}
+
