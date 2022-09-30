@@ -6,12 +6,19 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
-    height: 1200px;
+    height: 60rem;
     background-color: $primary-color;
 
     @include tablet {
         display: flex;
         flex-direction: column;
+        height: 57rem;
+        #cubi {
+            display: none;
+        }
+        background-image: url(https://i.imgur.com/s5VZzQ2.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
     }
 
     &-left {
@@ -25,6 +32,10 @@
             padding: 0;
         }
 
+        @include mobile {
+            padding-left: 1.3rem;
+        }
+
         h1 {
             text-align: left;
             font-size: 4rem;
@@ -36,6 +47,11 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
+
+            @include mobile {
+                font-size: 3rem;
+                padding-left: 4rem;
+            }
         } 
 
         ul {
@@ -43,6 +59,10 @@
             font-size: 20px;
             li {
                 padding: 7px;
+            }
+
+            @include mobile {
+                font-size: 17px;
             }
         }
     }
@@ -63,6 +83,7 @@
                 padding: 0.5rem 2rem;
                 margin: 3.5rem 0 1rem 0.7rem;
                 @include transparent-box;
+                background: rgba(51, 255, 217, 0.2);
                 img {
                     padding-right: 0;
                 }
@@ -78,10 +99,7 @@
             }
     
             #candidati {
-                margin-left: 0;
                 background: $gradient-fuchsia;
-                transition-property: background;
-                transition-duration: 3s;
                 
                 &:hover {
                     background: linear-gradient(to right,rgb(255, 34, 255) 0%, rgb(245, 8, 99) 100%);   
@@ -90,10 +108,7 @@
             }
 
             #prenota {
-                margin-left: 2rem;
                 background: $gradient-blue;
-                transition-duration:3s;
-                transition-property: background;
 
                 &:hover {
                     background: linear-gradient(to right,rgb(0, 229, 255)  0%, blue 90%);

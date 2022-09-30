@@ -27,7 +27,7 @@ $gradient-blue: linear-gradient(to right, blue 0%, rgb(0, 229, 255) 90%);
 
 @mixin transparent-box {
     border-radius: 20px;
-    background: rgba(51, 255, 217, 0.2);
+    background: rgba(241, 241, 241, 0.1);
     box-shadow: inset 5px 6px 26px 5px rgba(255, 255, 255, 0.4);
 }
 
