@@ -447,7 +447,7 @@ html, body {
   overflow: auto;
   overflow-y: hidden;
   margin: 0 auto;
-  padding-left: 2550px;
+  padding-left: 2300px;
   padding-right: 10rem;
 }
 .corsi-box {
@@ -480,11 +480,31 @@ html, body {
 .corsi-box .left .bottom p {
   padding-left: 5px;
 }
+.corsi-box #right1 {
+  background: linear-gradient(135deg, #8a03ca 0%, rgba(186, 3, 202, 0.51) 100%);
+}
+.corsi-box #right2 {
+  background: linear-gradient(135deg, #ca036e 0%, rgba(202, 3, 75, 0.5) 100%);
+}
+.corsi-box #right3 {
+  background: linear-gradient(135deg, #03a6ca 0%, rgba(31, 3, 202, 0.51) 100%);
+}
+.corsi-box #right4 {
+  background: linear-gradient(135deg, #66a01e 0%, rgba(78, 123, 23, 0.51) 100%);
+}
+.corsi-box #right5 {
+  background: linear-gradient(135deg, #ff8400 0%, rgba(236, 87, 3, 0.51) 100%);
+}
+.corsi-box #right6 {
+  background: linear-gradient(135deg, #ff3364 0%, rgba(255, 111, 145, 0.51) 100%);
+}
+.corsi-box #right7 {
+  background: linear-gradient(135deg, gainsboro 0%, rgba(255, 255, 255, 0.51) 100%);
+}
 .corsi-box .right {
   border-radius: 20px;
   background: rgba(241, 241, 241, 0.1);
   box-shadow: inset 5px 6px 26px 5px rgba(255, 255, 255, 0.4);
-  background: linear-gradient(135deg, #8a03ca 0%, rgba(186, 3, 202, 0.51) 100%);
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -502,9 +522,29 @@ html, body {
   border-radius: 7px;
 }
 .corsi-box .right .sfera {
-  background-color: #ca0392;
   width: 109px;
   height: 109px;
   border-radius: 100%;
   margin: 78px 40px;
+}
+.corsi-box .right #sfera1 {
+  background-color: #ca0392;
+}
+.corsi-box .right #sfera2 {
+  background-color: #a203ca;
+}
+.corsi-box .right #sfera3 {
+  background-color: #03a6ca;
+}
+.corsi-box .right #sfera4 {
+  background-color: #4e7b17;
+}
+.corsi-box .right #sfera5 {
+  background-color: #ec5703;
+}
+.corsi-box .right #sfera6 {
+  background-color: #ff3364;
+}
+.corsi-box .right #sfera7 {
+  background-color: #dcdcdc;
 }/*# sourceMappingURL=style.css.map */

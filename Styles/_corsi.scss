@@ -11,7 +11,7 @@
     overflow: auto;
     overflow-y: hidden;
     margin: 0 auto;
-    padding-left: 2550px;
+    padding-left: 2300px;
     padding-right: 10rem;
 
     &-box {
@@ -46,9 +46,36 @@
             }
         }
 
+        #right1 {
+            background: linear-gradient(135deg, #8a03ca 0%, rgba(186, 3, 202, 0.51) 100%);
+        }
+
+        #right2 {
+            background: linear-gradient(135deg, #ca036e 0%, rgba(202, 3, 75, 0.5) 100%);
+        }
+
+        #right3 {
+            background: linear-gradient(135deg, #03a6ca 0%, rgba(31, 3, 202, 0.51) 100%);
+        }
+
+        #right4 {
+            background: linear-gradient(135deg, #66a01e 0%, rgba(78, 123, 23, 0.51) 100%);
+        }
+
+        #right5 {
+            background: linear-gradient(135deg, #ff8400 0%, rgba(236, 87, 3, 0.51) 100%);
+        }
+
+        #right6 {
+            background: linear-gradient(135deg, #ff3364 0%, rgba(255, 111, 145, 0.51) 100%);
+        }
+
+        #right7 {
+            background: linear-gradient(135deg, gainsboro 0%, rgba(255, 255, 255, 0.51) 100%);
+        }
+
         .right {  
             @include transparent-box;
-            background: linear-gradient(135deg, #8a03ca 0%, rgba(186, 3, 202, 0.51) 100%);
             width: 100%;
             height: 100%;
             border-radius: 20px;
@@ -57,6 +84,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            
 
             .ore {
                 text-align: center;
@@ -67,12 +96,39 @@
             }
 
             .sfera {
-                background-color: #ca0392;
                 width: 109px;
                 height: 109px;
                 border-radius: 100%;
                 margin: 78px 40px;
             }
+
+            #sfera1 {
+               background-color: #ca0392;   
+            }
+
+            #sfera2 {
+                background-color: #a203ca;   
+             }
+
+             #sfera3 {
+                background-color: #03a6ca;;   
+             }
+
+             #sfera4 {
+                background-color: #4e7b17;;   
+             }
+
+             #sfera5 {
+                background-color: #ec5703;   
+             }
+
+             #sfera6 {
+                background-color: #ff3364;;   
+             }
+
+             #sfera7 {
+                background-color: #dcdcdc;   
+             }
         }
     }
 }
