@@ -3,7 +3,9 @@
 
 .corsi {
     background: $primary-color;
-    background-image: url(https://i.imgur.com/0uj4KI8.png);
+    background-image: url(https://i.imgur.com/0uj4KI8.png), url(https://i.imgur.com/0uj4KI8.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center left, center right;
     color: white;
     @include flexCenter;
     height: 50rem;

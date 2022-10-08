@@ -1,6 +1,7 @@
 $primary-color: black;
 $gradient-fuchsia: linear-gradient(to right, rgb(245, 8, 99) 0%, rgb(255, 34, 255) 100%);
 $gradient-blue: linear-gradient(to right, blue 0%, rgb(0, 229, 255) 90%);
+$gradient-green: linear-gradient(to right, #7ae1c4 0%, #c6a01a 100%);
 
 
 @mixin flexCenter {
@@ -11,6 +12,9 @@ $gradient-blue: linear-gradient(to right, blue 0%, rgb(0, 229, 255) 90%);
 
 
 @mixin button-format {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     padding: 0.3rem 2rem;
     border-radius: 30px;
@@ -35,4 +39,5 @@ $gradient-blue: linear-gradient(to right, blue 0%, rgb(0, 229, 255) 90%);
 @mixin titolo {
     font-size: 2.5rem;
     text-align: center;
+    font-weight: bold;
 }

@@ -1,0 +1,69 @@
+@import './utils';
+@import './media-queries';
+
+.crescita {
+    background: $primary-color;
+    color: white;
+    @include flexCenter;
+    flex-direction: column;
+    height: 1150px;
+    background-image: url(https://i.imgur.com/L7TES3r.png);
+    background-repeat: no-repeat;
+    background-position-x: 2070px;
+    background-position-y: 300px;
+
+    h1 {
+        @include titolo;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+    }
+
+    #spazio {
+        padding-bottom: 70px
+    }
+
+    #bold {
+        font-weight: bold;
+    }
+
+    #diamante-grande {
+        display: block;
+        position: absolute;
+        left: -470px;
+    }
+
+    #diamante-piccolo {
+        display: block;
+        position: absolute;
+        right: 650px;
+        bottom: -130px;
+    }
+
+    &-box {
+        @include transparent-box;
+        backdrop-filter: blur(12px); 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 130rem;
+        padding: 50px;
+    }
+
+    .left {
+        @include flexCenter;
+        flex-direction: column;
+    }
+
+    .center {
+        @include flexCenter;
+        flex-direction: column;
+    }
+
+    .right {
+        @include flexCenter;
+        flex-direction: column;
+    }
+}

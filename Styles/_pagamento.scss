@@ -1,0 +1,188 @@
+@import './utils';
+@import './media-queries';
+
+.pagamento {
+    width: 100%;
+    height: 95rem;
+    background: $primary-color;
+    color: white;
+    @include flexCenter;
+    flex-direction: column;
+    h1 {
+        @include titolo;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    background-image: url(https://i.imgur.com/tEScair.png), url(https://i.imgur.com/vdf3gPU.png), url(https://i.imgur.com/Pec9Ofs.png);
+    background-position-x: 39.5rem, 101.2rem, 70.3rem;
+    background-position-y: 50rem, 50rem, 75rem;
+    background-repeat: no-repeat, no-repeat;
+
+    .center {
+        width: 100%;
+        @include flexCenter;
+        justify-content: space-evenly;
+        height: 54rem;
+
+        h2 {
+            font-size: 2.7rem;
+            font-weight: 100;
+            padding: 30px;
+        }
+
+        h4 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+
+        .iva {
+            @include flexCenter;
+            flex-direction: column;
+            p {
+            font-size: 1rem;
+            }
+            padding-bottom: 30px;
+        }
+
+        h5 {
+            padding: 30px 30px;
+            font-size: 1.1rem;
+            font-weight: 100;
+            text-align: center;
+        }
+        
+
+        &-left {
+            max-width: 25rem;
+            height: 35rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include transparent-box;  
+            backdrop-filter: blur(12px);     
+
+            #no-risk {
+                width: 100%;
+                height: 80px;
+                text-align: center;
+                font-size: 2rem;
+                padding-top: 20px;
+                color: $primary-color;
+                background: $gradient-green;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            .pre-iscriviti {
+                position: absolute;
+                @include transparent-box;
+                width: 17rem; 
+                height: 5rem;
+                margin-top: 31.5rem;
+                padding-top: 20px;
+                @include flexCenter;
+                flex-direction: column;
+
+                a {
+                    @include button-format;
+                    background: $gradient-green;
+                    color: black;
+                }
+
+                p {
+                    color: black;
+                    font-size: 0.8rem;
+                    padding: 5px;
+                    &::before {
+                        content: "*";
+                    }
+                }
+            }
+        }
+
+        &-right {
+            max-width: 25rem;
+            height: 35rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            @include transparent-box;
+            backdrop-filter: blur(12px);
+            
+            
+
+            #rate {
+                width: 100%;
+                height: 80px;
+                text-align: center;
+                font-size: 2rem;
+                padding-top: 20px;
+                background: linear-gradient(to right, #df00a9 0%, #9400ff 50%, #007aff 100%);
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            .candidati {
+                position: absolute;
+                @include transparent-box;
+                width: 17rem; 
+                height: 5rem;
+                margin-top: 31.5rem;
+                @include flexCenter;
+                flex-direction: column;
+
+                a {
+                    @include button-format;
+                    background: #df00a9;
+                }
+            }
+        }
+    }
+
+    .bottom {
+
+        &-box {
+            @include flexCenter;
+            @include transparent-box;
+            height: 250px;
+            max-width: 4000px;
+            backdrop-filter: blur(12px);
+
+            img {
+                padding: 0 10rem;
+            }
+
+            h4 {
+                font-size: 2.4rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+        }
+
+        .prova {
+            position: absolute;
+            @include transparent-box;
+            width: 17rem; 
+            height: 5rem;
+            @include flexCenter;
+            flex-direction: column;
+            margin-top: 13.5rem;
+
+            a {
+                @include button-format;
+                border: 1px solid #fff;
+                background: rgb(70, 70, 70);
+            }
+
+        }
+    }
+}
