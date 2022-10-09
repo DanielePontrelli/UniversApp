@@ -5,8 +5,7 @@
     background: $primary-color;
     color: white;
     @include flexCenter;
-    // justify-content: space-evenly;
-    height: 600px;
+    height: 650px;
 
     &-left {
         padding-right: 150px;

@@ -862,7 +862,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 650px;
 }
 .iscriviti-left {
   padding-right: 150px;
@@ -971,4 +971,66 @@ html, body {
   justify-content: center;
   align-items: center;
   padding-left: 0.5rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 350px;
+}
+.footer h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.footer-left {
+  background: #33ffd9;
+  color: #4003ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 80px 200px;
+}
+.footer-left .social {
+  display: flex;
+}
+.footer-left .social img {
+  max-width: 40px;
+  margin: 20px 70px 20px 0px;
+}
+.footer-left .info {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.footer-left .info .e-mail {
+  font-weight: bold;
+}
+.footer-left .policy {
+  display: flex;
+}
+.footer-left .policy a {
+  text-decoration: none;
+  font-weight: 100;
+}
+.footer-left .policy .trattino {
+  margin: 0 15px;
+}
+.footer-left .iva {
+  font-weight: 100;
+}
+.footer-right {
+  background: #4003ca;
+  color: #33ffd9;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 80px 200px;
+}
+.footer-right h4 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.footer-right img {
+  max-width: 60px;
+  margin: 50px 0 0 400px;
 }/*# sourceMappingURL=style.css.map */
