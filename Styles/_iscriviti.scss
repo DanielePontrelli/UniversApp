@@ -7,12 +7,25 @@
     @include flexCenter;
     height: 650px;
 
+    @include tablet {
+        flex-direction: column;
+        height: 850px;
+    }
+
+    @include mobile {
+        height: 1100px;
+    }
+
     &-left {
         padding-right: 150px;
         .vantaggi {
             @include flexCenter;
             justify-content: left;
             padding-bottom: 40px;
+
+            @include mobile {
+                padding-left: 2rem;
+            }
 
             img {
                 padding-right: 5px;
@@ -29,6 +42,11 @@
         flex-direction: column;
         padding-left: 150px;
         border-left: white 2px solid;
+
+        @include tablet {
+            padding-left: 0;
+            border-left: 0;
+        }
 
 
         h1 {
@@ -52,12 +70,20 @@
                 
             &-left {
                 padding: 30px;
+
+                @include mobile {
+                    padding-right: 15px;
+                }
                 
                 .left-box {
                     @include transparent-box;
                     max-width: 100%;
                     height: 70px;
-                    @include flexCenter;
+                    @include flexCenter; 
+                    
+                    @include mobile {
+                        width: 200px;
+                    }
 
                     a {
                         @include button-format;
@@ -70,12 +96,20 @@
             
             &-right {
                 padding: 30px;
+
+                @include mobile {
+                    padding-left: 15px;
+                }
                 
                 .right-box {
                     @include transparent-box;
                     max-width: 100%;
                     height: 70px;
                     @include flexCenter;
+
+                    @include mobile {
+                        width: 200px;
+                    }
 
                     a {
                         @include button-format;

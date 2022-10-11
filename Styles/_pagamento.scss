@@ -21,11 +21,31 @@
     background-position-y: 50rem, 50rem, 75rem;
     background-repeat: no-repeat, no-repeat;
 
+    @include tablet {
+        height: 2000px;
+        background-position-x: 14rem;
+        background-position-y: 40rem, 77rem, 104rem;
+    }
+
+    @include mobile {
+        p {
+            padding-left: 45px;
+        }
+
+        background-position-x: 5rem;
+        background-position-y: 43rem, 80rem, 107rem;
+    }
+
     .center {
         width: 100%;
         @include flexCenter;
         justify-content: space-evenly;
         height: 54rem;
+
+        @include tablet {
+            flex-direction: column;
+            margin: 200px 0;
+        }
 
         h2 {
             font-size: 2.7rem;
@@ -63,7 +83,11 @@
             flex-direction: column;
             align-items: center;
             @include transparent-box;  
-            backdrop-filter: blur(12px);     
+            backdrop-filter: blur(12px);  
+            
+            @include tablet {
+                margin-bottom: 150px;
+            }
 
             #no-risk {
                 width: 100%;
@@ -86,6 +110,10 @@
                 padding-top: 20px;
                 @include flexCenter;
                 flex-direction: column;
+
+                @include tablet {
+                    margin-top: 27rem;
+                }
 
                 a {
                     @include button-format;
@@ -113,7 +141,9 @@
             @include transparent-box;
             backdrop-filter: blur(12px);
             
-            
+            @include tablet {
+                margin-bottom: 150px;
+            }
 
             #rate {
                 width: 100%;
@@ -135,6 +165,10 @@
                 @include flexCenter;
                 flex-direction: column;
 
+                @include tablet {
+                    margin-top:27rem;
+                }
+
                 a {
                     @include button-format;
                     background: #df00a9;
@@ -151,6 +185,10 @@
             height: 250px;
             max-width: 4000px;
             backdrop-filter: blur(12px);
+
+            @include tablet {
+                max-width: 760px
+            }
 
             img {
                 padding: 0 10rem;
@@ -176,6 +214,10 @@
             @include flexCenter;
             flex-direction: column;
             margin-top: 13.5rem;
+            
+            @include tablet {
+                margin-top: 20rem;
+            }
 
             a {
                 @include button-format;

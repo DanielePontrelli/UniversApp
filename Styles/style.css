@@ -402,6 +402,7 @@ html, body {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 600px;
 }
 @media screen and (max-width: 480px) {
   .percorso {
@@ -413,13 +414,16 @@ html, body {
 }
 .percorso-left {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 5rem 0 5rem 25rem;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 768px;
+  padding-left: 20rem;
 }
 @media screen and (max-width: 768px) {
   .percorso-left {
-    padding: 5rem 5rem;
+    padding-left: 5rem;
   }
 }
 .percorso-left h1 {
@@ -438,9 +442,15 @@ html, body {
 .percorso-left ul .magenta {
   color: #ff0076;
 }
+.percorso-right {
+  background-image: url(https://i.imgur.com/CP9nPCX.png);
+  background-repeat: no-repeat;
+  background-position-x: 200px;
+  background-position-y: 50px;
+}
 @media screen and (max-width: 480px) {
-  .percorso-right img {
-    display: none;
+  .percorso-right {
+    background: none;
   }
 }
 
@@ -582,6 +592,22 @@ html, body {
 .pagamento p {
   font-size: 1.3rem;
 }
+@media screen and (max-width: 768px) {
+  .pagamento {
+    height: 2000px;
+    background-position-x: 14rem;
+    background-position-y: 40rem, 77rem, 104rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pagamento {
+    background-position-x: 5rem;
+    background-position-y: 43rem, 80rem, 107rem;
+  }
+  .pagamento p {
+    padding-left: 45px;
+  }
+}
 .pagamento .center {
   width: 100%;
   display: flex;
@@ -589,6 +615,12 @@ html, body {
   align-items: center;
   justify-content: space-evenly;
   height: 54rem;
+}
+@media screen and (max-width: 768px) {
+  .pagamento .center {
+    flex-direction: column;
+    margin: 200px 0;
+  }
 }
 .pagamento .center h2 {
   font-size: 2.7rem;
@@ -628,6 +660,11 @@ html, body {
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
 }
+@media screen and (max-width: 768px) {
+  .pagamento .center-left {
+    margin-bottom: 150px;
+  }
+}
 .pagamento .center-left #no-risk {
   width: 100%;
   height: 80px;
@@ -652,6 +689,11 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .pagamento .center-left .pre-iscriviti {
+    margin-top: 27rem;
+  }
 }
 .pagamento .center-left .pre-iscriviti a {
   display: flex;
@@ -691,6 +733,11 @@ html, body {
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
 }
+@media screen and (max-width: 768px) {
+  .pagamento .center-right {
+    margin-bottom: 150px;
+  }
+}
 .pagamento .center-right #rate {
   width: 100%;
   height: 80px;
@@ -713,6 +760,11 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .pagamento .center-right .candidati {
+    margin-top: 27rem;
+  }
 }
 .pagamento .center-right .candidati a {
   display: flex;
@@ -743,6 +795,11 @@ html, body {
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
 }
+@media screen and (max-width: 768px) {
+  .pagamento .bottom-box {
+    max-width: 760px;
+  }
+}
 .pagamento .bottom-box img {
   padding: 0 10rem;
 }
@@ -766,6 +823,11 @@ html, body {
   align-items: center;
   flex-direction: column;
   margin-top: 13.5rem;
+}
+@media screen and (max-width: 768px) {
+  .pagamento .bottom .prova {
+    margin-top: 20rem;
+  }
 }
 .pagamento .bottom .prova a {
   display: flex;
@@ -799,6 +861,16 @@ html, body {
   background-position-x: 2070px;
   background-position-y: 300px;
 }
+@media screen and (max-width: 768px) {
+  .crescita {
+    background-position-x: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .crescita {
+    background-position-x: -5rem;
+  }
+}
 .crescita h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -820,11 +892,27 @@ html, body {
   position: absolute;
   left: -470px;
 }
+@media screen and (max-width: 768px) {
+  .crescita #diamante-grande {
+    display: none;
+  }
+}
 .crescita #diamante-piccolo {
   display: block;
   position: absolute;
   right: 650px;
   bottom: -130px;
+}
+@media screen and (max-width: 768px) {
+  .crescita #diamante-piccolo {
+    right: 500px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .crescita #diamante-piccolo {
+    right: -120px;
+    bottom: 700px;
+  }
 }
 .crescita-box {
   border-radius: 20px;
@@ -837,17 +925,38 @@ html, body {
   max-width: 130rem;
   padding: 50px;
 }
+@media screen and (max-width: 480px) {
+  .crescita-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+  }
+}
 .crescita .left {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  .crescita .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .crescita .center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .crescita .center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .crescita .right {
   display: flex;
@@ -864,6 +973,17 @@ html, body {
   align-items: center;
   height: 650px;
 }
+@media screen and (max-width: 768px) {
+  .iscriviti {
+    flex-direction: column;
+    height: 850px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .iscriviti {
+    height: 1100px;
+  }
+}
 .iscriviti-left {
   padding-right: 150px;
 }
@@ -873,6 +993,11 @@ html, body {
   align-items: center;
   justify-content: left;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .iscriviti-left .vantaggi {
+    padding-left: 2rem;
+  }
 }
 .iscriviti-left .vantaggi img {
   padding-right: 5px;
@@ -887,6 +1012,12 @@ html, body {
   flex-direction: column;
   padding-left: 150px;
   border-left: white 2px solid;
+}
+@media screen and (max-width: 768px) {
+  .iscriviti-right {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 .iscriviti-right h1 {
   font-size: 2.5rem;
@@ -912,6 +1043,11 @@ html, body {
 .iscriviti-right .scelta-left {
   padding: 30px;
 }
+@media screen and (max-width: 480px) {
+  .iscriviti-right .scelta-left {
+    padding-right: 15px;
+  }
+}
 .iscriviti-right .scelta-left .left-box {
   border-radius: 20px;
   background: rgba(241, 241, 241, 0.1);
@@ -921,6 +1057,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .iscriviti-right .scelta-left .left-box {
+    width: 200px;
+  }
 }
 .iscriviti-right .scelta-left .left-box a {
   display: flex;
@@ -944,6 +1085,11 @@ html, body {
 .iscriviti-right .scelta-right {
   padding: 30px;
 }
+@media screen and (max-width: 480px) {
+  .iscriviti-right .scelta-right {
+    padding-left: 15px;
+  }
+}
 .iscriviti-right .scelta-right .right-box {
   border-radius: 20px;
   background: rgba(241, 241, 241, 0.1);
@@ -953,6 +1099,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .iscriviti-right .scelta-right .right-box {
+    width: 200px;
+  }
 }
 .iscriviti-right .scelta-right .right-box a {
   display: flex;
@@ -979,6 +1130,12 @@ html, body {
   width: 100%;
   height: 350px;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer h4 {
   font-size: 1.4rem;
   font-weight: bold;
@@ -990,6 +1147,11 @@ html, body {
   flex-direction: column;
   justify-content: left;
   padding: 80px 200px;
+}
+@media screen and (max-width: 768px) {
+  .footer-left {
+    padding: 20px;
+  }
 }
 .footer-left .social {
   display: flex;
@@ -1026,11 +1188,27 @@ html, body {
   justify-content: left;
   padding: 80px 200px;
 }
-.footer-right h4 {
+@media screen and (max-width: 768px) {
+  .footer-right {
+    padding: 80px 50px;
+  }
+}
+.footer-right p {
+  font-size: 1.4rem;
   font-weight: bold;
   padding-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .footer-right p {
+    margin-right: 100px;
+  }
 }
 .footer-right img {
   max-width: 60px;
   margin: 50px 0 0 400px;
+}
+@media screen and (max-width: 768px) {
+  .footer-right img {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

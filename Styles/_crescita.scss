@@ -12,6 +12,14 @@
     background-position-x: 2070px;
     background-position-y: 300px;
 
+    @include tablet {
+        background-position-x: 5rem; 
+    }
+
+    @include mobile {
+        background-position-x: -5rem;
+    }
+
     h1 {
         @include titolo;
         padding-bottom: 20px;
@@ -34,6 +42,10 @@
         display: block;
         position: absolute;
         left: -470px;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     #diamante-piccolo {
@@ -41,6 +53,15 @@
         position: absolute;
         right: 650px;
         bottom: -130px;
+
+        @include tablet {
+            right: 500px
+        }
+
+        @include mobile {
+            right: -120px;
+            bottom: 700px;
+        }
     }
 
     &-box {
@@ -50,16 +71,32 @@
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 130rem;
         padding: 50px;
+
+        @include mobile {
+            @include flexCenter;
+            flex-direction: column;
+            width: 450px;
+        }
     }
 
     .left {
         @include flexCenter;
         flex-direction: column;
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .center {
         @include flexCenter;
         flex-direction: column;
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .right {

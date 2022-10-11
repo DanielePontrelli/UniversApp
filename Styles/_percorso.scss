@@ -6,6 +6,7 @@
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 600px;
 
     @include mobile {
         @include flexCenter;
@@ -13,13 +14,14 @@
     }
 
     &-left {
-        display: flex;
+        @include flexCenter;
         flex-direction: column;
-        justify-content: center;
-        padding:5rem 0 5rem 25rem;
+        align-items: flex-start;
+        max-width: 768px;
+        padding-left: 20rem;
         
         @include tablet {
-            padding: 5rem 5rem;
+            padding-left: 5rem ;
         }
         h1 {
             @include titolo;
@@ -41,10 +43,15 @@
     }
 
     &-right {
+
+        background-image: url(https://i.imgur.com/CP9nPCX.png);
+        background-repeat: no-repeat;;
+        background-position-x: 200px;
+        background-position-y: 50px;
+        
+
         @include mobile {
-            img {
-                display: none;
-            }
+            background: none;
         }
     }
 }
