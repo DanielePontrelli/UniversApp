@@ -561,10 +561,6 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(https://i.imgur.com/tEScair.png), url(https://i.imgur.com/vdf3gPU.png), url(https://i.imgur.com/Pec9Ofs.png);
-  background-position-x: 39.5rem, 101.2rem, 70.3rem;
-  background-position-y: 50rem, 50rem, 75rem;
-  background-repeat: no-repeat, no-repeat;
 }
 .pagamento h1 {
   font-size: 2.5rem;
@@ -576,32 +572,34 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .pagamento {
-    height: 2000px;
-    background-position-x: 14rem;
-    background-position-y: 40rem, 77rem, 104rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .pagamento {
-    background-position-x: 5rem;
-    background-position-y: 43rem, 80rem, 107rem;
-  }
-  .pagamento p {
-    padding-left: 45px;
+    padding: 80rem 0;
   }
 }
 .pagamento .center {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  height: 54rem;
+  height: 500px;
+}
+.pagamento .center .background {
+  padding: 0 20rem;
+}
+.pagamento .center .background img {
+  position: relative;
+  top: 710px;
+}
+@media screen and (max-width: 768px) {
+  .pagamento .center .background #green {
+    top: 1300px;
+  }
+  .pagamento .center .background #purple {
+    top: 650px;
+  }
 }
 @media screen and (max-width: 768px) {
   .pagamento .center {
     flex-direction: column;
-    margin: 200px 0;
+    margin: 100px 0;
   }
 }
 .pagamento .center h2 {
@@ -644,7 +642,7 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .pagamento .center-left {
-    margin-bottom: 150px;
+    margin-top: 650px;
   }
 }
 .pagamento .center-left #no-risk {
@@ -717,7 +715,7 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .pagamento .center-right {
-    margin-bottom: 150px;
+    padding-bottom: 300px;
   }
 }
 .pagamento .center-right #rate {
@@ -765,6 +763,20 @@ html, body {
   align-items: center;
   padding-left: 0.5rem;
 }
+.pagamento .bottom {
+  padding-top: 10rem;
+}
+.pagamento .bottom #black {
+  position: relative;
+  left: 580px;
+  top: 400px;
+}
+@media screen and (max-width: 768px) {
+  .pagamento .bottom #black {
+    left: 230px;
+    top: 1100px;
+  }
+}
 .pagamento .bottom-box {
   display: flex;
   justify-content: center;
@@ -779,7 +791,8 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .pagamento .bottom-box {
-    max-width: 760px;
+    max-width: 750px;
+    margin-top: 40rem;
   }
 }
 .pagamento .bottom-box img {

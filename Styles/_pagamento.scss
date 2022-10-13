@@ -16,35 +16,54 @@
         font-size: 1.3rem;
     }
 
-    background-image: url(https://i.imgur.com/tEScair.png), url(https://i.imgur.com/vdf3gPU.png), url(https://i.imgur.com/Pec9Ofs.png);
-    background-position-x: 39.5rem, 101.2rem, 70.3rem;
-    background-position-y: 50rem, 50rem, 75rem;
-    background-repeat: no-repeat, no-repeat;
-
     @include tablet {
-        height: 2000px;
-        background-position-x: 14rem;
-        background-position-y: 40rem, 77rem, 104rem;
+        padding: 80rem 0;
     }
 
-    @include mobile {
-        p {
-            padding-left: 45px;
-        }
+    // background-image: url(https://i.imgur.com/tEScair.png), url(https://i.imgur.com/vdf3gPU.png), url(https://i.imgur.com/Pec9Ofs.png);
+    // background-position-x: 39.5rem, 101.2rem, 70.3rem;
+    // background-position-y: 50rem, 50rem, 75rem;
+    // background-repeat: no-repeat, no-repeat;
 
-        background-position-x: 5rem;
-        background-position-y: 43rem, 80rem, 107rem;
-    }
+    // @include tablet {
+    //     height: 2000px;
+    //     background-position-x: 14rem;
+    //     background-position-y: 40rem, 77rem, 104rem;
+    // }
+
+    // @include mobile {
+    //     p {
+    //         padding-left: 45px;
+    //     }
+
+    //     background-position-x: 5rem;
+    //     background-position-y: 43rem, 80rem, 107rem;
+    // }
 
     .center {
-        width: 100%;
         @include flexCenter;
-        justify-content: space-evenly;
-        height: 54rem;
+        height: 500px;
+        .background {
+            padding:0 20rem;
+            img {
+                position: relative;
+                top: 710px; 
+            }
+
+            @include tablet {
+                #green {
+                    top: 1300px;
+                }
+
+                #purple {
+                    top: 650px;
+                }
+            }
+        }
 
         @include tablet {
             flex-direction: column;
-            margin: 200px 0;
+            margin: 100px 0;
         }
 
         h2 {
@@ -86,7 +105,7 @@
             backdrop-filter: blur(12px);  
             
             @include tablet {
-                margin-bottom: 150px;
+                margin-top: 650px;
             }
 
             #no-risk {
@@ -142,7 +161,7 @@
             backdrop-filter: blur(12px);
             
             @include tablet {
-                margin-bottom: 150px;
+                padding-bottom: 300px;
             }
 
             #rate {
@@ -179,6 +198,20 @@
 
     .bottom {
 
+        padding-top: 10rem;
+
+
+        #black {
+            position: relative;
+            left: 580px;
+            top: 400px;
+
+            @include tablet {
+                left: 230px;
+                top: 1100px;
+            }
+        }
+
         &-box {
             @include flexCenter;
             @include transparent-box;
@@ -187,7 +220,8 @@
             backdrop-filter: blur(12px);
 
             @include tablet {
-                max-width: 760px
+                max-width: 750px;
+                margin-top: 40rem;
             }
 
             img {
