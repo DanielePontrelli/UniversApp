@@ -10,6 +10,7 @@
 
     h1 {
         @include titolo;
+        
         @include tablet {
             text-align: center;
         }

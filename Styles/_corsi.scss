@@ -7,6 +7,7 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center left, center right;
     color: white;
+    
     display: flex;
     align-items: center;
     height: 50rem;
@@ -15,6 +16,12 @@
     overflow-y: hidden;
     margin: 0 auto;
     padding:0 10rem;
+
+    @include tablet {
+        background-image: url(https://i.imgur.com/0uj4KI8.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
 
     &-box {

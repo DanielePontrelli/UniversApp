@@ -453,6 +453,13 @@ html, body {
   margin: 0 auto;
   padding: 0 10rem;
 }
+@media screen and (max-width: 768px) {
+  .corsi {
+    background-image: url(https://i.imgur.com/0uj4KI8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .corsi-box {
   display: flex;
   border-radius: 20px;
@@ -573,6 +580,7 @@ html, body {
 @media screen and (max-width: 768px) {
   .pagamento {
     padding: 80rem 0;
+    text-align: center;
   }
 }
 .pagamento .center {
@@ -777,6 +785,11 @@ html, body {
     top: 1100px;
   }
 }
+@media screen and (max-width: 480px) {
+  .pagamento .bottom #black {
+    left: 0;
+  }
+}
 .pagamento .bottom-box {
   display: flex;
   justify-content: center;
@@ -791,8 +804,13 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .pagamento .bottom-box {
-    max-width: 750px;
+    max-width: 740px;
     margin-top: 40rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pagamento .bottom-box {
+    max-width: 450px;
   }
 }
 .pagamento .bottom-box img {
@@ -1145,7 +1163,7 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .footer-left {
-    padding: 20px;
+    padding: 50px 20px;
   }
 }
 .footer-left .social {
@@ -1185,7 +1203,7 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .footer-right {
-    padding: 80px 50px;
+    padding: 50px 20px;
   }
 }
 .footer-right p {

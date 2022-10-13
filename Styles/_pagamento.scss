@@ -18,6 +18,7 @@
 
     @include tablet {
         padding: 80rem 0;
+        text-align: center;
     }
 
     // background-image: url(https://i.imgur.com/tEScair.png), url(https://i.imgur.com/vdf3gPU.png), url(https://i.imgur.com/Pec9Ofs.png);
@@ -210,6 +211,10 @@
                 left: 230px;
                 top: 1100px;
             }
+
+            @include mobile {
+                left: 0;
+            }
         }
 
         &-box {
@@ -220,8 +225,12 @@
             backdrop-filter: blur(12px);
 
             @include tablet {
-                max-width: 750px;
+                max-width: 740px;
                 margin-top: 40rem;
+            }
+
+            @include mobile {
+                max-width: 450px;
             }
 
             img {
