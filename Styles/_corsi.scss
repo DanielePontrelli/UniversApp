@@ -7,14 +7,14 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center left, center right;
     color: white;
-    @include flexCenter;
+    display: flex;
+    align-items: center;
     height: 50rem;
     width: 100%;
     overflow: auto;
     overflow-y: hidden;
     margin: 0 auto;
-    padding-left: 2300px;
-    padding-right: 10rem;
+    padding:0 10rem;
 
 
     &-box {

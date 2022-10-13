@@ -16,25 +16,14 @@
     }
 
     &-swipe {
-        @include flexCenter;
+        display: flex;
+        align-items: center;
         height: 40rem;
         width: 100%;
         overflow: auto;
         overflow-y: hidden;
         margin: 0 auto;
-        padding-left: 50rem;
-        padding-right: 10rem;
-
-        @include tablet {
-        @include flexCenter;
-        height: 40rem;
-        width: 100%;
-        overflow: auto;
-        overflow-y: hidden;
-        margin: 0 auto;
-        padding-left: 100rem;
-        padding-right: 20rem;
-        }
+        padding: 0 10rem;
 
         .sfondo {
             background-image: url(https://i.imgur.com/gxzu8R0.png);
