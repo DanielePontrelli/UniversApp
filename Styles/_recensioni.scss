@@ -26,6 +26,10 @@
         margin: 0 auto;
         padding: 0 10rem;
 
+        @include tablet {
+            padding: 0 5rem;
+        }
+
         .sfondo {
             background-image: url(https://i.imgur.com/gxzu8R0.png);
             background-repeat: no-repeat;

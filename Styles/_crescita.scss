@@ -9,7 +9,7 @@
     height: 1150px;
     background-image: url(https://i.imgur.com/L7TES3r.png);
     background-repeat: no-repeat;
-    background-position-x: 2070px;
+    background-position-x: 1500px;
     background-position-y: 300px;
 
     @include tablet {
@@ -39,9 +39,9 @@
     }
 
     #diamante-grande {
-        display: block;
         position: absolute;
-        left: -470px;
+        width: 40%;
+        left: -400px;
 
         @include tablet {
             display: none;
@@ -72,10 +72,14 @@
         max-width: 130rem;
         padding: 50px;
 
-        @include mobile {
+        @include tablet {
             @include flexCenter;
             flex-direction: column;
-            width: 450px;
+            width: 760px;
+        }
+
+        @include mobile {
+            width: 470px;
         }
     }
 
@@ -83,9 +87,13 @@
         @include flexCenter;
         flex-direction: column;
 
-        @include mobile {
+        @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        @include mobile{
+            text-align: center;
         }
     }
 
@@ -93,9 +101,13 @@
         @include flexCenter;
         flex-direction: column;
 
-        @include mobile {
+        @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        @include mobile {
+            text-align: center;
         }
     }
 

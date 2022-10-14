@@ -208,13 +208,10 @@
             top: 400px;
 
             @include tablet {
-                left: 230px;
+                left: 0;
                 top: 1100px;
             }
 
-            @include mobile {
-                left: 0;
-            }
         }
 
         &-box {
@@ -235,6 +232,10 @@
 
             img {
                 padding: 0 10rem;
+
+                @include mobile {
+                    padding: 0;
+                }
             }
 
             h4 {
